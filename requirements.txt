@@ -1,7 +1,0 @@
-pyTelegramBotAPI
-requests
-beautifulsoup4
-urllib3
-phonenumbers
-pycountry
-cloudscraper
