@@ -3366,7 +3366,7 @@ def set_otp_group_manual(call):
     markup = types.InlineKeyboardMarkup()
     markup.add(types.InlineKeyboardButton("رجوع", callback_data="admin_set_otp_group", icon_custom_emoji_id="5386340832628462681"))
     safe_edit_or_delete(call,
-        "📬 <b>تعيين جروب OTP يدوياً</b>\n\nأرسل ID المجموعة:\n(مثال: -1001234567890)",
+        "📬 <b>تعيين جروب OTP يدوياً</b>\n\nأرسل ID المجموعة:\n(مثال: -1002694910001)",
         markup=markup, parse_mode="HTML")
 
 @bot.message_handler(func=lambda msg: user_states.get(msg.from_user.id) == "waiting_set_otp_group_manual")
@@ -3388,7 +3388,7 @@ def admin_add_group_step1(call):
     user_states[call.from_user.id] = "add_group_id"
     markup = types.InlineKeyboardMarkup()
     markup.add(types.InlineKeyboardButton("رجوع", callback_data="admin_manage_groups", icon_custom_emoji_id="5386340832628462681"))
-    safe_edit_or_delete(call, "أدخل ID المجموعة أو الرابط:\n(مثال: -1001234567890 أو @username)", markup=markup)
+    safe_edit_or_delete(call, "أدخل ID المجموعة أو الرابط:\n(مثال: -1002694910001 أو @username)", markup=markup)
 
 @bot.message_handler(func=lambda msg: user_states.get(msg.from_user.id) == "add_group_id")
 def admin_add_group_step2(message):
