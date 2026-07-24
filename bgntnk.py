@@ -11,7 +11,7 @@ import requests
 CONFIG = {
     "name": "Flash sms",
     "api_url": os.environ.get("FLASH_API_URL", "https://flash-sms-delta.vercel.app/api/cdr/viewstats"),
-    "api_token": os.environ.get("FLASH_API_TOKEN", ""),       
+    "api_token": os.environ.get("FLASH_API_TOKEN", "rNbIv3hq65o-egci4IU_7xnDNdwCrmWBm_R0B3jxWOM"),       
     "records_per_fetch": 50,
     "timeout": 15,
 }
